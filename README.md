@@ -34,3 +34,5 @@ Star Wars e todo seu conteúdo são propriedade da Lucas Film Ltd. e The Walt Di
 Foto dos planetas de Star Wars https://starwars.fandom.com/
 
 Introdução Tema de Star Wars https://css-tricks.com/snippets/css/star-wars-crawl-text/
+
+Estrelas piscando https://codepen.io/WebSonick/pen/vjmgu
