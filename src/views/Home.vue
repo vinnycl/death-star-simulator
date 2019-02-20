@@ -1,18 +1,19 @@
 <template>
 
   <div class="home">
-    <div class="stars"></div>
-    <div class="twinkling"></div>
-    <introduction></introduction>
+    <universe></universe>
+    <cockpit></cockpit>
     
   </div>
 </template>
 
 <script>
-import Introduction from '@/components/Introduction.vue';
+import Cockpit from '@/components/Cockpit.vue';
+import Universe from '@/components/Universe.vue';
 export default {
   components: {
-      Introduction
+      Cockpit,
+      Universe
   }
 }
 </script>
