@@ -2,7 +2,8 @@
 
   <div class="home">
     <universe></universe>
-    <introduction></introduction>
+    <cockpit></cockpit>
+    <planets></planets>
   </div>
 </template>
 
