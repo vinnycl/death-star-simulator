@@ -1,7 +1,5 @@
 <template>
-  <div class="cockpit">
-    cockpit
-  </div>
+  <div class="cockpit"></div>
 </template>
 
 <script>

@@ -61,12 +61,12 @@
 </script>
 
 <style lang="scss">
- @import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
 
 .home {
   width: 100%;
   height: 100%;
-  font: 700 1em "News Cycle", sans-serif;
+  font-size: 1em;
+  font-weight: 700;
   letter-spacing:.15em;
 	color: #ff6;
 	background: #000;

@@ -2,18 +2,21 @@
 
   <div class="home">
     <universe></universe>
-    <cockpit></cockpit>
-    
+    <introduction></introduction>
   </div>
 </template>
 
 <script>
 import Cockpit from '@/components/Cockpit.vue';
 import Universe from '@/components/Universe.vue';
+import Planets from '@/components/Planets.vue';
+import Introduction from '@/components/Introduction.vue';
 export default {
   components: {
       Cockpit,
-      Universe
+      Universe,
+      Planets,
+      Introduction
   }
 }
 </script>
