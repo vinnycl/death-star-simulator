@@ -1,7 +1,7 @@
 <template>
   <div class="loading">
-    <img src="../assets/images/galactic-empireo.svg" alt="Loading ...">
-    <img src="../assets/images/galactic-empirei.svg" alt="Loading ...">
+    <img src="https://vinnycl.github.io/statics/images/galactic-empireo.svg" alt="Loading ...">
+    <img src="https://vinnycl.github.io/statics/images/galactic-empirei.svg" alt="Loading ...">
   </div>
 </template>
 
@@ -23,8 +23,8 @@
         }
     }
     .loading {
-        position: absolute;
-        z-index: 10;
+        position: fixed;
+        z-index: 11;
         width: 200px;
         height: 200px;
         left: 50%;

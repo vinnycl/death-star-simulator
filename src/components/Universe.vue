@@ -30,12 +30,12 @@
 }
 
 .stars {
-  background: url(../assets/images/stars.png) repeat top center;
+  background: url(https://vinnycl.github.io/statics/images/stars.png) repeat top center;
   z-index:0;
 }
 
 .twinkling{
-  background: url(../assets/images/twinkling.png) repeat top center;
+  background: url(https://vinnycl.github.io/statics/images/twinkling.png) repeat top center;
   z-index:1;
   animation:move-twink-back 200s linear infinite;
 }
