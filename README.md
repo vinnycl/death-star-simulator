@@ -1,6 +1,6 @@
 # Simulador da Estrela da Morte
 
-![Estrela da Morte](https://vinnycl.github.io/statics/images/images/death-star.jpeg)
+![Estrela da Morte](https://vinnycl.github.io/statics/images/death-star.jpeg)
 
 O simulador da [Estrela da Morte](https://pt.wikipedia.org/wiki/Estrela_da_Morte) usa a API  [swapi](https://swapi.co/) para identificar os planetas e obter informações antes de destruir o planeta.
 O objetivo desse simulador é usar a grande arma do [Império Galáctico](https://pt.wikipedia.org/wiki/Imp%C3%A9rio_Gal%C3%A1tico_(Star_Wars)) para aniquilar a [Aliança Rebelde](https://pt.wikipedia.org/wiki/Alian%C3%A7a_Rebelde) e dominar a Galáxia.
@@ -20,9 +20,9 @@ Após o fim do download de todas dependências use o comando:
 ```
 npm run server
 ```
-Se tudo estiver correto, e não tiver problema com nenhuma dependência o terminal vai avisar que o serviço está disponível através da URL:
+Se tudo estiver correto, e não tiver problema com nenhuma dependência o terminal vai avisar que o serviço está disponível através da URL indicada em seu terminal:
 ```
-http://localhost:8080
+http://localhost:XXXX
 ```
 Coloque essa url em seu navegador favorito e divirta-se destruindo alguns Rebeldes.
 
