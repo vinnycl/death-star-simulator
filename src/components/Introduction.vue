@@ -1,11 +1,10 @@
 <template>
   <div class="introduction">
     <article class="starwars">
-  <audio preload="auto" autoplay>
-    <source src="../assets/audios/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />    
-    <source src="../assets/audios/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" />
-    Your browser does not support the audio element.
-  </audio>
+      <audio autoplay>
+        <source src="https://vinnycl.github.io/statics/audios/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />
+        Your browser does not support the audio element.
+      </audio>
    
   <div class="animation">
     
@@ -46,7 +45,7 @@
   </section>
   
   <section class="logo">
-    <img class="logoStarWars" src="../assets/images/star-wars.svg" />
+    <img class="logoStarWars" src="https://vinnycl.github.io/statics/images/star-wars.svg" />
   </section>
   </div>
 </article>
@@ -123,7 +122,7 @@
       > p {
 	      margin: 1.35em 0 1.85em 0;
         line-height: 1.35em;        
-        backface:-visibility(hidden);
+        backface-visibility: hidden;
       }
     }
   }
