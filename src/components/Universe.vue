@@ -11,7 +11,7 @@
   }
 </script>
 
-<style>
+<style scoped>
 
 @keyframes move-twink-back {
     from {background-position:0 0;}

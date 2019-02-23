@@ -9,10 +9,10 @@
 
 </script>
 
-<style>
+<style scoped>
 .cockpit {
-    position: absolute;
-    z-index: 3;
+    position: fixed;
+    z-index: 6;
     width: 100%;
     height: 100%;
     background: url(https://vinnycl.github.io/statics/images/death-star-cockpit.png) center;

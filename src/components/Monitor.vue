@@ -27,7 +27,7 @@
 <style scoped lang="scss">
 .monitor {
     position: absolute;
-    z-index: 4;
+    z-index: 11;
     width: 650px;
     height: 320px;
     top: 50%;
@@ -42,6 +42,9 @@
         list-style: none;
         font-weight: 700;
         font-size: 1.2em;
+        @media screen and (max-height: 400px) {
+            font-size: 1em;
+        }
         margin: 0 0 0 2em;
         padding: 0.5em 1em;
         position: relative;
@@ -51,6 +54,9 @@
         position: relative;
         &:first-child {
             font-size: 1.6em;
+            @media screen and (max-height: 400px) {
+                font-size: 1.1em;
+            }
             color: #5780f2;
             text-transform: uppercase;
         }

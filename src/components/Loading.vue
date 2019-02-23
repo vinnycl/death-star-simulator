@@ -24,7 +24,7 @@
     }
     .loading {
         position: fixed;
-        z-index: 11;
+        z-index: 4;
         width: 200px;
         height: 200px;
         left: 50%;

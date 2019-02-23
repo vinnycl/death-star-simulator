@@ -2,10 +2,11 @@
 
   <div class="deathstar">
     <loading v-show="loading"></loading>
+    <fire v-show="fire"></fire>
     <universe></universe>
     <cockpit></cockpit>
-    <monitor :planet="planet"></monitor>
-    <explosion :onClick="getInformation" ></explosion>
+    <monitor :planet="planet" v-show="monitor"></monitor>
+    <explosion :onClick="explodePlanet" ></explosion>
   </div>
   
 </template>
@@ -16,15 +17,18 @@
   import Universe from '@/components/Universe.vue';
   import Monitor from '@/components/Monitor.vue';
   import Explosion from '@/components/Explosion.vue';
+  import Fire from '@/components/Fire.vue';
   import Loading from '@/components/Loading.vue';
   import planets from '@/services/planets.js';
   import { mapActions } from 'vuex';
-
+  
   export default {
     name: "Planets",
     data () {
       return {
-        loading: false
+        loading: false,
+        fire: false,
+        monitor: true,
       }
     },
     components: {
@@ -32,11 +36,13 @@
       Universe,
       Monitor,
       Explosion,
+      Fire,
       Loading
     },
     computed: {
       planet () {
         return this.$store.state.planet;
+        
       }
     },
     mounted () {
@@ -47,14 +53,24 @@
         storeInformation: 'information'
       }),
       
+      explodePlanet(){
+        this.monitor = false;
+        this.fire = true;
+        setTimeout(()=>{
+          this.fire = false;
+          this.monitor = true;
+        },1500);
+        this.getInformation();
+      },
       getInformation () {
         this.loading = true;      
+        
+
+        
 
         let infoId = planetList[Math.floor(Math.random()*planetList.length)];
-
-        if(planetList.length == 0) {
+        if(planetList.length == 0)
           this.$router.push('gameover');
-        } 
         else {
           return planets.getInformation(infoId)
           .then(planet => {            
