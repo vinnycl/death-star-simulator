@@ -68,16 +68,16 @@
   display: block;
   transform: translate(-50%, -50%);
   width: 244px;
-  height: 78px;
+  height: 77px;
   background: url(https://vinnycl.github.io/statics/images/scifi-btn.png);
   font-size: 0;
   opacity: 0;
   animation: play 2s linear 93s forwards;
   &:hover {
-    background-position: 0 -78px;
+    background-position: 0 -77px;
   }
   &:active {
-    background-position: 0 -156px;
+    background-position: 0 -154px;
   }
 }
 .home {
