@@ -2,6 +2,7 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Home from './views/Home.vue';
 import Deathstar from './views/Deathstar.vue';
+import Gameover from './views/Gameover.vue';
 import Error from './views/Error.vue';
 
 
@@ -17,6 +18,11 @@ export default new Router({
             path: '/deathstar',
             name: 'deathstar',
             component: Deathstar
+        },
+        {
+            path: '/gameover',
+            name: 'gameover',
+            component: Gameover
         },
         {
             path: '/error',

@@ -1,6 +1,6 @@
 <template>
   <div class="introduction">
-    <article class="starwars">
+    <div class="starwars">
       <audio autoplay>
         <source src="https://vinnycl.github.io/statics/audios/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
@@ -11,7 +11,9 @@
   <section class="intro">
     A long time ago, in a galaxy far,<br> far away....
   </section>
-    
+  <section class="logo">
+    <img class="logoStarWars" src="https://vinnycl.github.io/statics/images/star-wars.svg" />
+  </section>
   <section class="titles">
     <div> 
       <p>
@@ -44,11 +46,10 @@
       </div>
   </section>
   
-  <section class="logo">
-    <img class="logoStarWars" src="https://vinnycl.github.io/statics/images/star-wars.svg" />
-  </section>
+  
   </div>
-</article>
+</div>
+<router-link class="deathstar-button " to="/deathstar">Play now?</router-link>
   </div>
 </template>
 
@@ -60,7 +61,25 @@
 </script>
 
 <style lang="scss">
-
+.deathstar-button {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  display: block;
+  transform: translate(-50%, -50%);
+  width: 244px;
+  height: 78px;
+  background: url(https://vinnycl.github.io/statics/images/scifi-btn.png);
+  font-size: 0;
+  opacity: 0;
+  animation: play 2s linear 93s forwards;
+  &:hover {
+    background-position: 0 -78px;
+  }
+  &:active {
+    background-position: 0 -156px;
+  }
+}
 .home {
   width: 100%;
   height: 100%;
@@ -76,7 +95,7 @@
 .starwars {
   section {
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     z-index: 1;
   }  
@@ -142,30 +161,26 @@
     opacity: 0;
   }
 }
-
+$logo-width: 18em;
+$logo-margin: (- $logo-width / 2) 0 0 (- $logo-width / 2);
 @keyframes logo {
 	0% { 
-    $logo-width: 18em;
-  	width: $logo-width;
-    margin: (- $logo-width / 2) 0 0 (- $logo-width / 2);
     
+  	width: $logo-width;
+    margin: $logo-margin;
     transform:(scale(2.75)); 
     opacity: 1; 
   }
 	50% { 
     opacity: 1; 
-    
-    $logo-width: 18em;
   	width: $logo-width;
-    margin: (- $logo-width / 2) 0 0 (- $logo-width / 2);
+    margin: $logo-margin;
   }
 	100% { 
     transform:(scale(.1)); 
     opacity: 0;
-    
-    $logo-width: 18em;
   	width: $logo-width;
-    margin: (- $logo-width / 2) 0 0 (- $logo-width / 2);
+    margin: $logo-margin;
   }
 }
 
@@ -180,6 +195,21 @@
 	100% { 
     top: 20%; 
     opacity: 0;
+  }
+}
+
+@keyframes play {
+	0% { 
+    opacity: 0;
+    z-index: 0;
+  }
+  99% {
+    opacity: 0;
+    z-index: 0;
+  }
+	100% { 
+    opacity: 1;
+    z-index: 11;
   }
 }
 </style>

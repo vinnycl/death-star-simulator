@@ -18,7 +18,6 @@
   import Explosion from '@/components/Explosion.vue';
   import Loading from '@/components/Loading.vue';
   import planets from '@/services/planets.js';
-
   import { mapActions } from 'vuex';
 
   export default {
@@ -49,24 +48,27 @@
       }),
       
       getInformation () {
-        this.loading = true;
-
-        
+        this.loading = true;      
 
         let infoId = planetList[Math.floor(Math.random()*planetList.length)];
-        console.log(planetList);
-        console.log(infoId);
-        var idElm = planetList.indexOf(infoId);
-        if (idElm > -1) {
-          planetList.splice(idElm, 1);
-        }
-        console.log(planetList);
-        return planets.getInformation(infoId)
-          .then(planet => {
-          this.storeInformation(planet);
-        })
+
+        if(planetList.length == 0) {
+          this.$router.push('gameover');
+        } 
+        else {
+          return planets.getInformation(infoId)
+          .then(planet => {            
+            var idElm = planetList.indexOf(infoId);
+            if (idElm > -1) {
+              planetList.splice(idElm, 1);
+            }
+            this.storeInformation(planet);
+          })
           .catch(() => this.$router.push('error'))
-          .finally(() => this.loading = false);
+          .finally(() => 
+            this.loading = false,
+          );          
+        }        
       }
     }
   }
