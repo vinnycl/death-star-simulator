@@ -25,10 +25,15 @@
 </script>
 
 <style scoped lang="scss">
+@import '../assets/styles/_variables';
+@import '../assets/styles/mixins/_media-queries';
 .monitor {
     position: absolute;
     z-index: 11;
-    width: 650px;
+    width: 568px;
+    @include lrg {
+        width: 650px;
+    }
     height: 320px;
     top: 50%;
     left: 50%;
@@ -41,27 +46,27 @@
         color: #c9d8f9;
         list-style: none;
         font-weight: 700;
-        font-size: 1.2em;
-        @media screen and (max-height: 400px) {
-            font-size: 1em;
+        font-size: 1em;
+        @include lrg {
+            font-size: 1.2em;
         }
         margin: 0 0 0 2em;
         padding: 0.5em 1em;
         position: relative;
-        border: 0.1em solid #1e2679;
+        border: 0.1em solid $font-fordary;
         border-radius: 1em;
         li {
         position: relative;
-        &:first-child {
-            font-size: 1.6em;
-            @media screen and (max-height: 400px) {
-                font-size: 1.1em;
+        &:first-child {            
+            font-size: 1.1em;
+            @include lrg {
+                font-size: 1.6em;
             }
-            color: #5780f2;
+            color: $font-thirdary;
             text-transform: uppercase;
         }
         &:after, &:before {
-            background: rgba(30, 38, 121, 0.8);
+            background: $font-fordary;
             display: block;
             position: absolute;
             content: "";

@@ -1,0 +1,7 @@
+@import '../_variables.scss';
+// Min height
+@mixin lrg {
+    @media (min-height: #{$screen-lrg}) {
+        @content;
+    }
+}

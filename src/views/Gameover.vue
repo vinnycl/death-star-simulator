@@ -25,9 +25,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../assets/styles/_variables';
 .gameover {
-  color: rgb(75, 213, 238);
+  color: $font-secondary;
   .gameover-content {
     text-align: center;
     position: absolute;

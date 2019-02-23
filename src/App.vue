@@ -4,11 +4,12 @@
   </div>
 </template>
 
-<style>
-@import url(https://fonts.googleapis.com/css?family=News+Cycle:400,700);
+<style lang="scss">
+@import 'assets/styles/_variables';
+
 
 body {
-  font-family: "News Cycle", sans-serif;
+  font-family: $main-font;
   font-weight: 400;
   background: #000;
   margin: 0;

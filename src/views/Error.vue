@@ -24,9 +24,9 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '../assets/styles/_variables';
 .error {
-  color: rgb(75, 213, 238);
+  color: $font-secondary;
   .error-content {
     text-align: center;
     position: absolute;

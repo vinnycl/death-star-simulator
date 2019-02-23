@@ -61,6 +61,7 @@
 </script>
 
 <style lang="scss">
+@import '../assets/styles/_variables';
 .deathstar-button {
   position: fixed;
   top: 50%;
@@ -86,8 +87,8 @@
   font-size: 1em;
   font-weight: 700;
   letter-spacing:.15em;
-	color: #ff6;
-	background: #000;
+	color: $font-primary;
+	background: $main-background;
 	overflow: hidden;
   margin: 0;
 }
@@ -106,7 +107,7 @@
     margin: 0 0 0 (- $intro-width / 2);
 	  font-size: 200%;
 	  font-weight: 400;
-  	color: rgb(75, 213, 238);
+  	color: $font-secondary;
     opacity: 0;
 	  animation: intro 6s ease-out 1s;
   }
