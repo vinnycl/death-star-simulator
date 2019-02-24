@@ -21,5 +21,15 @@
         "@vue/test-utils": "^1.0.0-beta.29",
         "chai": "^4.2.0",
         "@vue/cli-plugin-unit-mocha": "^3.4.1"
-    }
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions",
+        "not ie <= 8"
+    ]
 }
