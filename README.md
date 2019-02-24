@@ -26,6 +26,12 @@ http://localhost:XXXX
 ```
 Coloque essa url em seu navegador favorito e divirta-se destruindo alguns Rebeldes.
 
+## Teste unitário
+Para testar código, use o comando:
+```
+npm run test
+```
+
 ## Informações de uso justo
 
 Todo conteúdo usado nesse projeto é feito por conteúdo de fãs e não possui fins lucrativos seguindo a [Fair use](https://pt.wikipedia.org/wiki/Fair_use).
