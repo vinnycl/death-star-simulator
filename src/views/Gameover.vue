@@ -3,7 +3,7 @@
 
       <div class="gameover-content">
         <h1>You destroyed all the planets!</h1>
-        <video autoplay playsinline width="640" height="320"  >
+        <video controls autoplay width="640" height="320"  >
           <source src="https://vinnycl.github.io/statics/videos/gameover.mp4" type="video/mp4">
           Your browser does not support the video tag.
         </video>

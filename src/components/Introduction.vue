@@ -1,7 +1,8 @@
 <template>
   <div class="introduction">
     <div class="starwars">
-      <audio autoplay>
+      <audio controls autoplay>
+        <source src="https://vinnycl.github.io/statics/audios/Star_Wars_original_opening_crawl_1977.ogg" type="audio/ogg" />
         <source src="https://vinnycl.github.io/statics/audios/Star_Wars_original_opening_crawl_1977.mp3" type="audio/mpeg" />
         Your browser does not support the audio element.
       </audio>
@@ -62,6 +63,9 @@
 
 <style lang="scss">
 @import '../assets/styles/_variables';
+audio {
+  display: none;
+}
 .deathstar-button {
   position: fixed;
   top: 50%;
