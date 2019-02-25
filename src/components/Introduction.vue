@@ -24,25 +24,25 @@
       </p>
 
       <p>
-        However, not every rebel was eradicate.
-        Some Rebel spaceships, striking
-        from a hidden bases.
+        However, not every rebel was eradicated.
+        Some Rebel spaceships are striking
+        from a hidden base.
       </p>
 
       <p>
         Boba Fett, the bounty hunter
-        have gathering some information
+        have gathered some information
         that the Rebel forces is about to make
         their last strike from a hidden planet.
       </p>
 
       <p>
         To make sure that all Rebels
-        got wiped out, the Empire Galactic
+        got wiped out, the Galactic Empire 
         have decided to use the DEATH STAR
         to blow away those Rebels possible strike.
         Now the Galactic Empire is marching
-        into their last battle to bring freedom to the galaxy....
+        into their last battle to bring peace to the galaxy....
       </p>
       </div>
   </section>
