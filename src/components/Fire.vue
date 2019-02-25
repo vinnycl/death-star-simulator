@@ -1,6 +1,9 @@
 <template>
     <div class="fire">
-      <img src="https://vinnycl.github.io/statics/images/uniexplosion.gif" alt="FIRE!">
+      <video id="explosionVideo" >
+          <source src="https://vinnycl.github.io/statics/videos/fast-explosion.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
     </div>
 </template>
 
@@ -12,13 +15,14 @@
 
 <style scoped lang="scss">
   .fire {
-    img {
+    video {
         position: fixed;
-        z-index: 5;
+        z-index: 13;
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
+        object-fit: cover;
     }
   }
 </style>

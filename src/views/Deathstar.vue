@@ -56,10 +56,11 @@
       explodePlanet(){
         this.monitor = false;
         this.fire = true;
+        document.getElementById("explosionVideo").play(); 
         setTimeout(()=>{
           this.fire = false;
           this.monitor = true;
-        },1500);
+        },8000);
         this.getInformation();
       },
       getInformation () {
